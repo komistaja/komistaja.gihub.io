@@ -1,0 +1,24 @@
+<head>
+    <title>Monty Halls problem</title>
+</head>
+
+<body>
+    <h2>Monty Halls problem</h2>
+    <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Wikipedia</a>
+    <div>
+        <label for="input">Number of times to run test:</label>
+        <div>
+            <input id="input" type="number">
+        </div>
+    </div>
+    <div>
+        <label for="selector">Should the selection be changed after removal of empty container:</label>
+        <input id="selection" type="checkbox" name="selector"></input>
+    </div>
+    <button type="button" onclick="main(document.getElementById('input').value)">Run simulation!</button>
+    <div id="result">
+        <p id="won"></p>
+        <p id="lost"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
